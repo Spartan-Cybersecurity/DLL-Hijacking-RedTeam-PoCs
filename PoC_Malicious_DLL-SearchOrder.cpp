@@ -1,6 +1,6 @@
 // PoC_Malicious_DLL.cpp
 // Esta DLL abrirá una ventana de mensaje cuando sea cargada por cualquier ejecutable.
-// Desarrollado por Gerh de Spartan-Cybersecurity 🛡️
+// Desarrollado por Gerh de Spartan-Cybersecurity 🛡
 // Renombra la DLL compilada con el nombre de la DLL que quieres cargar al explotar la vulnerabilidad del orden de búsqueda de DLL
 // y colócala en la misma carpeta que el ejecutable vulnerable para aprovechar la vulnerabilidad.
 
