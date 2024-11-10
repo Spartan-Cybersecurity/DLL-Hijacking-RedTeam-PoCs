@@ -1,6 +1,6 @@
-// PoC_Malicious_DLL.cpp
+// testing.dll
 // Esta DLL abrirá una ventana de mensaje cuando sea cargada por cualquier ejecutable.
-// Desarrollado por Gerh de Spartan-Cybersecurity 🛡
+// Desarrollado por Gerh de Spartan-Cybersecurity 
 // Renombra la DLL compilada con el nombre de la DLL que quieres cargar al explotar la vulnerabilidad del orden de búsqueda de DLL
 // y colócala en la misma carpeta que el ejecutable vulnerable para aprovechar la vulnerabilidad.
 
@@ -17,8 +17,8 @@ BOOL WINAPI DllMain(
     switch (fdwReason)
     {
     case DLL_PROCESS_ATTACH:   // Cuando un proceso carga esta DLL
-        // 🎉 Muestra un mensaje indicando que la DLL maliciosa ha sido ejecutada
-        MessageBox(NULL, _T("Spartan-Cybersecurity está aquí!"), _T("Mensaje"), MB_OK | MB_SYSTEMMODAL);
+        //  Muestra un mensaje indicando que la DLL maliciosa ha sido ejecutada
+        MessageBox(NULL, _T("Spartan-Cybersecurity esta aqui!"), _T("Mensaje"), MB_OK | MB_SYSTEMMODAL);
         break;
 
         /*
