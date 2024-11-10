@@ -1,5 +1,5 @@
 // VulnerableLoadLibraryApp.cpp
-// Este ejecutable de ejemplo cargará dos DLLs (rmclient.dll & rtm.dll) usando la función LoadLibrary()
+// Este ejecutable de ejemplo cargará dos DLLs (testing.dll & rtm.dll) usando la función LoadLibrary()
 // Desarrollado por Gerh de Spartan-Cybersecurity 
 
 #include <Windows.h>   // Biblioteca principal para funciones de Windows
@@ -7,13 +7,13 @@
 
 int main()
 {
-    //  Intenta cargar la primera DLL: rmclient.dll
-    HINSTANCE hGetProcIDDLL1 = LoadLibrary(TEXT("rmclient.dll"));
+    //  Intenta cargar la primera DLL: testing.dll
+    HINSTANCE hGetProcIDDLL1 = LoadLibrary(TEXT("testing.dll"));
 
     // Verifica si la DLL fue cargada correctamente
     if (hGetProcIDDLL1 == NULL) {
-        //  Muestra un mensaje si hay un problema al cargar rmclient.dll
-        MessageBox(NULL, _T("Hubo un problema al cargar rmclient.dll"), _T("Mensaje"), MB_OK | MB_SYSTEMMODAL);
+        //  Muestra un mensaje si hay un problema al cargar testing.dll
+        MessageBox(NULL, _T("Hubo un problema al cargar testing.dll"), _T("Mensaje"), MB_OK | MB_SYSTEMMODAL);
     }
     else {
         //  Muestra un mensaje si la DLL se cargó exitosamente
